@@ -74,3 +74,28 @@ def checkDriverAge2(age=0):
 checkDriverAge2(18)
 
 print('\n############################################################################################\n')
+
+## CHALLENGE - write a function that takes a list as a paramater and returns the largest even number in the list
+
+# my solution - 25 steps (is it worth the loss in readability) 
+def highest_even(li):
+  temp = 0
+  for num in li:
+    # could also be written as if not num % 2 - which would evaluate to Truthy or Falsy depending on whether it was a 0 or not - less readable
+    if num % 2 == 0:
+      temp = num if num > temp else temp
+  return temp
+
+print(highest_even([10,2,3,4,8,11, 99]))
+
+# instructors solution
+def other_highest_even(li):
+  evens = []
+  for num in li:
+    if num % 2 == 0:
+      evens.append(num)
+  return max(evens)
+
+print(other_highest_even([10,2,3,4,8,11, 20]))
+
+print('\n############################################################################################\n')
