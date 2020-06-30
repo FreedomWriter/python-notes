@@ -75,4 +75,41 @@ def nested_sum(num1, num2):
 nest_total = nested_sum(33, 67)
 # print(nest_total(33, 67))
 
+# DOCSTRINGS
+## lets you add comments to your functions, visible by the pop ups, the help fuction, or the magic (dunder) method function.__doc__
+def test(a):
+  '''
+  Info: this function tets and prints param a
+  '''
+  print(a)
 
+help(test)
+print(test.__doc__)
+
+# *args & **kwargs
+## both are banana words, but, you know, convention
+## *args returns a tupple
+## **kwargs returns a dict
+
+def super_func(*args, **kwargs):
+  print(type(args))
+  print(type(kwargs))
+  total= 0
+  for items in kwargs.values():
+    total += items
+  return sum(args) + total
+
+
+print(super_func(1,2,3,4,5, num1=5, num2=10))
+
+def super_func(name, *args, i='hi', **kwargs):
+  print(type(args))
+  print(type(kwargs))
+  total= 0
+  for items in kwargs.values():
+    total += items
+  return sum(args) + total
+
+## RULE: params, *args, default parameters, **kwargs
+
+print(super_func('Natalie', 1,2,3,4,5, num1=5, num2=10))
