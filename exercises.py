@@ -99,3 +99,14 @@ def other_highest_even(li):
 print(other_highest_even([10,2,3,4,8,11, 20]))
 
 print('\n############################################################################################\n')
+
+# PASSWORD CHECKER
+
+username = input('Enter username: ')
+password = input('Enter password: ')
+password_hidden = '*' * len(password)
+length = len(password)
+print(f'Hello, {username}, your password is {length} characters long.')
+
+
+print('\n############################################################################################\n')
