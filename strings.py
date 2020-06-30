@@ -1,5 +1,5 @@
-STRINGS
-Can print a long string by beginning with 3 single quotes and ending with 3 single quotes
+# STRINGS
+# Can print a long string by beginning with 3 single quotes and ending with 3 single quotes
 long_string = '''
 WOW
 O O
@@ -113,8 +113,8 @@ print(f'# selfish_number[::-1] evaluates to "{selfish_number[::-1]}" where selfi
 print('\n############################################################################################\n')
 
 
-Immutability
-strings are immutable in that you cannot do something like selfish[0] ="8", though you can reassing the value of selfish like this selfish = "new string" or selfish = selfish + "new string to add to existing balue of selfish"
+# Immutability
+# strings are immutable in that you cannot do something like selfish[0] ="8", though you can reassing the value of selfish like this selfish = "new string" or selfish = selfish + "new string to add to existing balue of selfish"
 
 print(f' # STRINGS are IMMUTABLE\n # You cannot do something like selfish[0] ="8"\n # You can reassign the value of selfish like this:\n \n   selfish = "new string"\n \n# Or\n \n    selfish = selfish + "new string to add to existing value of selfish"')
 
