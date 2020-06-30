@@ -38,10 +38,10 @@ print(type(obj1))
 
 class PlayerCharacter:
   def __init__(self, name, age):
-    self.name = name
+    self.name = name # ATTRIBUTE
     self.age = age
 
-  def run(self):
+  def run(self): # METHOD
     print('run')
   
 
