@@ -210,3 +210,24 @@ a.sort(key=lambda x: x[1])
 
 print('\n############################################################################################\n')
 
+# CHALLENGE - CREATE A LAMBDA FUNCTION THAT RETURNS A LIST OF ANY DUPLICATE VALUES IN A GIVEN LIST. EACH ITEM IN THE LIST SHOULD BE UNIQUE
+
+some_list_2 = ['a', 'b', 'c', 'b', 'd', 'm', 'n', 'n']
+
+# Step 1 - declarea variable
+## duplicates2 = [x]
+# Step 2 - loop over list
+## duplicates = [x for x in some_list_2 ]
+# Step 3 - add a conditional that checks the number of occurances of x in the given list and returns items with occurances greater than 1
+## duplicates = [x for x in some_list_2 if some_list_2.count(x) > 1]
+# Step 4 - convert that list to a set to remove duplicate entries
+## duplicates = set([x for x in some_list_2 if some_list_2.count(x) > 1])
+# Step 4 - convert set back to a list
+## duplicates = list(set([x for x in some_list_2 if some_list_2.count(x) > 1]))
+
+duplicates2 = list(set([x for x in some_list_2 if some_list_2.count(x) > 1]
+))
+print(duplicates2)
+
+print('\n############################################################################################\n')
+
