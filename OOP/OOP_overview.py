@@ -6,7 +6,7 @@
 # # 1. encapsulating 
 # # 2. abstraction
 # # 3. inheritance
-# # 4. 
+# # 4. polymorphism
 
 print(type(None))
 print(type(True))

@@ -2,6 +2,9 @@
 class User():
     def sign_in(self):
         print('logged in')
+    
+    def attack(self):
+        print('do nothing')
 
 # this is all it takes to 'extend the prototype' Just give the sub-class the class you want to extend
 class Wizard(User):
@@ -10,6 +13,7 @@ class Wizard(User):
         self.power = power
 
     def attack(self):
+        User.attack(self) # USING THE ATTACK METHOD FROM USER
         print(f"Attacking with power of {self.power}")
 
 class Archer(User):
@@ -33,3 +37,16 @@ archer1.attack()
 print(isinstance(wizard1, Wizard))
 print(isinstance(wizard1, User))
 print(isinstance(wizard1, object)) # base class that python comes with - dunder methods are on the base `object` method
+
+# POLYMORPHISM poly for many morphism for form
+# # refers to the way object classes can share the same method name, but those method names can act differnetly based on whcih object calls it
+# # the attack method in this example is a good demonstration of this
+
+def player_attack(char):
+    return char.attack()
+
+player_attack(wizard1)
+player_attack(archer1)
+
+for char in [wizard1, archer1]:
+    char.attack()
