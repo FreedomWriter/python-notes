@@ -32,4 +32,8 @@ class Archer(User):
 wizard1 = Wizard('Natalie', 'Hacking', "happy@hacking.com")
 archer1 = Archer('Robin', 100, "hood@mail.com")
 
-print(wizard1.email)
+# print(wizard1.email)
+
+# intropsection
+## the ability to determine the type of an object at runtime
+print(dir(archer1))
