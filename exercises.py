@@ -111,7 +111,7 @@ print('\n#######################################################################
 # print('\n############################################################################################\n')
 
 #Given the below class:
-class Cat:
+class Kitty:
     species = 'mammal'
     def __init__(self, name, age):
         self.name = name
@@ -119,9 +119,9 @@ class Cat:
 
 
 # 1 Instantiate the Cat object with 3 cats
-cat1 = Cat('kitty', 1)
-cat2 =Cat('anotherkitty', 2)
-cat3 = Cat('oldestKitty', 3)
+cat1 = Kitty('kitty', 1)
+cat2 =Kitty('anotherkitty', 2)
+cat3 = Kitty('oldestKitty', 3)
 
 # 2 Create a function that finds the oldest cat
 def find_oldest(*args):
@@ -189,3 +189,24 @@ print(len(super_list1))
 super_list1.append(5)
 print(super_list1[0])
 print(issubclass(SuperList, list))
+
+print('\n############################################################################################\n')
+
+# LAMBDA CHALLENGES
+
+# #CREATE A LAMBDA EXPRESSION TO SQUARE A LIST
+
+my_list = [5,4,3]
+new_list = list(map(lambda item: item * item, my_list))
+print(new_list)
+
+# # LIST SORTING
+## sort the following list of tuples by the second key
+
+a= [(0,2), (4,3), (9,9), (10, -1)]
+# .sort() takes a key as it's first param
+# # here we are using a lambda expression to assign the key at the index of 1 in each tuple to the key being given to sort
+a.sort(key=lambda x: x[1])
+
+print('\n############################################################################################\n')
+
