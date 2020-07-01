@@ -44,36 +44,36 @@ print(duplicates)
 
 print('\n############################################################################################\n')
 
-# Exercise
-#1. Wrap the above code in a function called checkDriverAge(). Whenever you call this function, you will get prompted for age. 
-# Notice the benefit in having checkDriverAge() instead of copying and pasting the function everytime?
+# # Exercise
+# #1. Wrap the above code in a function called checkDriverAge(). Whenever you call this function, you will get prompted for age. 
+# # Notice the benefit in having checkDriverAge() instead of copying and pasting the function everytime?
 
-age = input("What is your age?: ")
+# age = input("What is your age?: ")
 
-def checkDriverAge(age):
-  if int(age) < 18:
-    return print("Sorry, you are too young to drive this car. Powering off")
-  elif int(age) > 18:
-    return print("Powering On. Enjoy the ride!");
-  elif int(age) == 18:
-    return print("Congratulations on your first year of driving. Enjoy the ride!")
-checkDriverAge(age)
+# def checkDriverAge(age):
+#   if int(age) < 18:
+#     return print("Sorry, you are too young to drive this car. Powering off")
+#   elif int(age) > 18:
+#     return print("Powering On. Enjoy the ride!");
+#   elif int(age) == 18:
+#     return print("Congratulations on your first year of driving. Enjoy the ride!")
+# checkDriverAge(age)
 
-#2 Instead of using the input(). Now, make the checkDriverAge() function accept an argument of age, so that if you enter:
-#checkDriverAge(92);
-#it returns "Powering On. Enjoy the ride!"
-#also make it so that the default age is set to 0 if no argument is given.
+# #2 Instead of using the input(). Now, make the checkDriverAge() function accept an argument of age, so that if you enter:
+# #checkDriverAge(92);
+# #it returns "Powering On. Enjoy the ride!"
+# #also make it so that the default age is set to 0 if no argument is given.
 
-def checkDriverAge2(age=0):
-  if int(age) < 18:
-    return print("Sorry, you are too young to drive this car. Powering off")
-  elif int(age) > 18:
-    return print("Powering On. Enjoy the ride!");
-  elif int(age) == 18:
-    return print("Congratulations on your first year of driving. Enjoy the ride!")
-checkDriverAge2(18)
+# def checkDriverAge2(age=0):
+#   if int(age) < 18:
+#     return print("Sorry, you are too young to drive this car. Powering off")
+#   elif int(age) > 18:
+#     return print("Powering On. Enjoy the ride!");
+#   elif int(age) == 18:
+#     return print("Congratulations on your first year of driving. Enjoy the ride!")
+# checkDriverAge2(18)
 
-print('\n############################################################################################\n')
+# print('\n############################################################################################\n')
 
 ## CHALLENGE - write a function that takes a list as a paramater and returns the largest even number in the list
 
@@ -100,15 +100,15 @@ print(other_highest_even([10,2,3,4,8,11, 20]))
 
 print('\n############################################################################################\n')
 
-# PASSWORD CHECKER
+# # PASSWORD CHECKER
 
-username = input('Enter username: ')
-password = input('Enter password: ')
-password_hidden = '*' * len(password)
-length = len(password)
-print(f'Hello, {username}, your password is {length} characters long.')
+# username = input('Enter username: ')
+# password = input('Enter password: ')
+# password_hidden = '*' * len(password)
+# length = len(password)
+# print(f'Hello, {username}, your password is {length} characters long.')
 
-print('\n############################################################################################\n')
+# print('\n############################################################################################\n')
 
 #Given the below class:
 class Cat:
@@ -177,3 +177,15 @@ my_pets = Pets(my_cats)
 my_pets.walk()
 
 print('\n############################################################################################\n')
+
+# CHALLENGE - CREATE A SUPERLIST
+
+class SuperList(list):
+  def __len__(self):
+    return 1000
+
+super_list1 = SuperList()
+print(len(super_list1))
+super_list1.append(5)
+print(super_list1[0])
+print(issubclass(SuperList, list))

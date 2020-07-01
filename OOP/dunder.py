@@ -18,6 +18,7 @@ class Toy():
     def __call__(self):
        return('yes?')
 
+    ## allows action_figure to access my_dict through bracket notation
     def __getitem__(self, i):
         return self.my_dict[i]
 
