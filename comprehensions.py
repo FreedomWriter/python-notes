@@ -43,3 +43,21 @@ print(my_set_range_multiplied)
 my_set_evens = {num**2 for num in range(0, 100)
   if num % 2 == 0}
 print(my_set_evens)
+
+simple_dict = {
+    'a': 1,
+    'b': 2
+}
+my_dict = { key:value**2 for key,value in simple_dict.items() }
+
+
+my_dict_comp = { key:value**2 for key,value in simple_dict.items() }
+print (my_dict_comp)
+
+my_dict_evens = {k:v**2 for k,v in simple_dict.items()
+  if v % 2 == 0}
+print(my_dict_evens)
+
+# creating a dic from a list where the key is equal to the number from the list and the value is equal to the number from the list times two
+my_dict_from_list = {num:num * 2 for num in [1,2,3]}
+print(my_dict_from_list)
