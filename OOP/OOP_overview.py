@@ -2,6 +2,12 @@
 # ## Everything in python is an object, with different compile
 # ## Objects have methods and attributes that you can access with dot notation
 
+# 4 PILLARS OF OBJECT ORIENTED PROGAMMING
+# # 1. encapsulating 
+# # 2. abstraction
+# # 3. inheritance
+# # 4. 
+
 print(type(None))
 print(type(True))
 print(type(False))
@@ -35,6 +41,7 @@ print(type(obj1))
 
 # Example:
 ## __init__ is a dunder method (aka magic method) and is automatically called each time a new instance is instanciated
+## # if there are no methods being assigned to the object instance, you don't need __init__
 
 class PlayerCharacter:
   def __init__(self, name, age):
