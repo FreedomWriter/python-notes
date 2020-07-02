@@ -251,3 +251,38 @@ message_friends(user1)
 
 print('\n############################################################################################\n')
 
+# # # Guessing game, WON'T WORK BEING RAN FROM THIS FILE - COPY PASTE INTO A NEW FILE OR REPL.IT
+
+# # generate a number 1-10
+# # get imput from user
+# # check that input is a number 1-10
+# #check if number is the right guess. Otherwise aqsk again
+
+# from random import randint
+
+# answer = randint(1,10)
+
+# # to give paramaters while running program in a terminal (negating the need for an input)
+# # # comment out lines 8 and 16, then uncomment following lines:
+
+
+# # import sys
+
+# # answer = (randint(int(sys.argv[1]),int(sys.argv[2])))
+
+
+# while True:
+#     try:
+#         guess = int(input('guess a number 1~10: '))
+#         # if int(guess) > 1 and int(guess) < 11:
+#         if 0 < guess < 11:
+#             if guess == answer:
+#                 print('you are a genious')
+#                 break
+#         else: 
+#             print("c'mon, 1~10 buddy")
+#     except ValueError:
+#         print('Please enter a number')
+#         continue
+
+print('\n############################################################################################\n')
