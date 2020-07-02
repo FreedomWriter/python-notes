@@ -6,7 +6,6 @@ def say_hello():
   print('Hello World')
 
 # say_hello()
-
 tree = [
   [0,0,0,1,0,0,0],
   [0,0,1,1,1,0,0],
@@ -15,8 +14,8 @@ tree = [
   [0,0,0,1,0,0,0],
   [0,0,0,1,0,0,0]
 ]
-# tree.reverse()
-tree_icon = "🎄"
+# # tree.reverse()
+tree_icon = "T"
 arrow_icon = "⬆"
 def show_pic(pic, icon):
   print('')
@@ -29,16 +28,16 @@ def show_pic(pic, icon):
     print('') # need a new line after every row
   print('')
 
-# # postional arguments - arguments that must be in proper position
+# postional arguments - arguments that must be in proper position
 show_pic(tree, tree_icon)
 show_pic(tree, arrow_icon)
 show_pic(tree, tree_icon)
 
-# # keyword arguments - position doesn't matter (kind of introduces unneeded complexity)
-show_pic( icon=tree_icon, pic=tree)
+# keyword arguments - position doesn't matter (kind of introduces unneeded complexity)
+show_pic(pic=tree, icon=tree_icon)
 
 # default paramerters
-def default_params(pic=tree, icon='🐍'):
+def default_params(pic=tree, icon='S'):
   print('')
   for row in pic:
     for pixel in row:
@@ -49,8 +48,8 @@ def default_params(pic=tree, icon='🐍'):
     print('') # need a new line after every row
   print('')
 
-# default params provide a fallback in case no arguments are given to the function when invoked
-default_params()
+# # default params provide a fallback in case no arguments are given to the function when invoked
+# default_params()
 
 # return
 
@@ -73,7 +72,7 @@ def nested_sum(num1, num2):
     return n1 + n2
   return nest
 nest_total = nested_sum(33, 67)
-# print(nest_total(33, 67))
+print(nest_total(33, 67))
 
 # DOCSTRINGS
 ## lets you add comments to your functions, visible by the pop ups, the help fuction, or the magic (dunder) method function.__doc__
@@ -83,7 +82,7 @@ def test(a):
   '''
   print(a)
 
-help(test)
+# help(test)
 print(test.__doc__)
 
 # *args & **kwargs
@@ -91,13 +90,13 @@ print(test.__doc__)
 ## *args returns a tupple
 ## **kwargs returns a dict
 
-def super_func(*args, **kwargs):
-  print(type(args))
-  print(type(kwargs))
-  total= 0
-  for items in kwargs.values():
-    total += items
-  return sum(args) + total
+# def super_func(*args, **kwargs):
+#   print(type(args))
+#   print(type(kwargs))
+#   total= 0
+#   for items in kwargs.values():
+#     total += items
+#   return sum(args) + total
 
 
 print(super_func(1,2,3,4,5, num1=5, num2=10))

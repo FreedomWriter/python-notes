@@ -17,7 +17,7 @@ your_list = ['one', 'two', 'three', 'four', 'five']
 def map_func(item):
     return item * 2
 
-# print(list(map(map_func, my_list)))
+print(list(map(map_func, my_list)))
 # print(my_list)
 
 # FILTER
@@ -32,11 +32,11 @@ print(my_list)
 
 # REDUCE
 ## reduces just like js, does not need to be wrapped in list()
-def reduce_func(acc, item):
-    return acc + item
+# def reduce_func(acc, item):
+#     return acc + item
 
-print(reduce(my_list, your_list))
-print(my_list)
+# print(reduce(my_list, your_list))
+# print(my_list)
 
 # zip
 ## returns a tuple with the two iterables `zipped` together
