@@ -15,7 +15,7 @@ class TestGame(unittest.TestCase):
         self.assertFalse(result)
 
     def test_input_wrong_type(self):
-        result = guess.run_guess('11', 5)
+        result = guess.run_guess(5,'11')
         self.assertFalse(result)
 
 if __name__ == '__main__':

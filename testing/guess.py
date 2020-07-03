@@ -1,12 +1,12 @@
 import random
 
 def run_guess(guess, answer):
-    if  0 < int(guess) < 11:
+    if  0 < guess < 11:
         if guess == answer:
             print('you are a genius!')
             return True
     else:
-        print('c'mon, I said 1~10')
+        print("c'mon, I said 1~10")
         return False
 
 if __name__ == '__main__':
