@@ -266,9 +266,9 @@ print('\n#######################################################################
 # # # comment out lines 8 and 16, then uncomment following lines:
 
 
-# # import sys
+# import sys
 
-# # answer = (randint(int(sys.argv[1]),int(sys.argv[2])))
+# answer = (randint(int(sys.argv[1]),int(sys.argv[2])))
 
 
 # while True:
