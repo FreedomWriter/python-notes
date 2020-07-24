@@ -128,7 +128,7 @@ print(f"  cleared_list = clear_rem_basket.clear()")
 print(f'  print("cleared_list") ----> {cleared_list}')
 print(f'  print("cleared_list") ----> {clear_rem_basket}')
 
-.index(value, [start, stop])
+# .index(value, [start, stop])
 
 index_basket = ['a','b', 'c', 'd', 'e']
 
