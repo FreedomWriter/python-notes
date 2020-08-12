@@ -1,14 +1,14 @@
 import random
 import time
 
-my_range = 100
-my_size = 15
+my_range = 500000
+my_size = 10000
 
-# random_nums = random.sample(range(my_range), my_size)
-random_nums = [4, 10, 13, 17, 21, 26, 29, 31, 32, 50, 67, 60, 74, 85, 92]
+random_nums = random.sample(range(my_range), my_size)
+# random_nums = [4, 10, 13, 17, 21, 26, 29, 31, 32, 50, 67, 60, 74, 85, 92]
 
 print(random_nums)
-num_to_find = 12
+num_to_find = 4578
 
 # O(N) - linear time
 def linear_search(arr, target):
@@ -20,7 +20,13 @@ def linear_search(arr, target):
 
 # print(linear_search(random_nums, num_to_find))
 
-# random_nums.sort()
+print('Linear')
+start = time.time()
+print(linear_search(random_nums, num_to_find))
+end = time.time()
+print(f"Runtime: {end - start}")
+
+random_nums.sort()
 # print(random_nums)
 
 def binary_search(arr, target):
@@ -43,4 +49,8 @@ def binary_search(arr, target):
                 start = (middle_index + 1)
     return found
     
-print(binary_search(random_nums, 13))
+print('Binary')
+start = time.time()
+print(binary_search(random_nums, num_to_find))
+end = time.time()
+print(f"Runtime: {end - start}")
